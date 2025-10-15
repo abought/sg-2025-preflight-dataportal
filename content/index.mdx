@@ -1,0 +1,36 @@
+import React from "react";
+import { Box, Center, Text, Button } from "@chakra-ui/react";
+import Link from 'next/link';
+
+import { RequireAuthentication } from "@/components/RequireAuthentication";
+
+
+import { STATIC } from "@/utils/static";
+
+<Center mt={4}>
+  <Text color="gray.400" as="em" fontSize="2xl" fontWeight="extrabold">
+    Science Gateways 2025: Your project hub
+  </Text>
+</Center>
+
+
+<Center mt={4}>
+<Box>
+<RequireAuthentication fallback={(auth) => {
+  return (
+    <>
+      <Button variant="link" onClick={async () => await auth.authorization.login()}>Sign In</Button> to get started.
+    </>
+  )
+}}>
+  Browse available <Link style={{color: "#999999"}} href="/transfer">project datasets</Link>
+
+  Other project resources:
+  <ul>
+    <li>Mailing list</li>
+    <li>Meeting minutes</li>
+  </ul>
+</RequireAuthentication>
+</Box>
+</Center>
+
