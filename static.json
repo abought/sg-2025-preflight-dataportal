@@ -1,24 +1,40 @@
 {
   "_static": {
     "generator": {
-      "name":  "@globus/static-data-portal"
+      "name": "@globus/static-data-portal"
     }
   },
   "data": {
     "version": "1.0.0",
     "attributes": {
+      "features": {
+        "useLocalStorage": true
+      },
       "content": {
-        "title": "Modern Research Data Portal",
-        "privacy_policy": "This is an example privacy policy – you should replace this with your own policy.",
-        "terms_of_service": "This is an example terms of service – you should replace this with your own terms."
+        "title": "Science Gateways 2025: Data Portal",
+        "subtitle": "From the USDA Data Catalog",
+        "tagline": "",
+        "privacy_policy": "The contents of this site will be webcast to a wide audience.",
+        "terms_of_service": "It's your site. You decide how to use it!",
+        "navigation": {
+          "items": [
+            {
+              "label": "GitHub",
+              "href": "https://github.com/globus/template-data-portal"
+            },
+            {
+              "label": "Science Gateways 2025",
+              "href": "https://sciencegateways.org/gateways2025-program"
+            }
+          ]
+        }
       },
       "globus": {
         "application": {
-          "client_id": "fa198f1c-d1d5-407e-b2e1-67afdff1e1a9"
-      },
+          "client_id": "f9f87c09-edae-41bc-83fd-b5011f959e76"
+        },
         "transfer": {
-          "collection_id": "a6f165fa-aee2-4fe5-95f3-97429c28bf82",
-          "path": "/portal/catalog/"
+          "collection_id": "15b90ae8-7750-4f4e-969f-76272f96cae2"
         }
       }
     }
